@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mapRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- خريطة Google -->
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- عرض الإحداثيات -->
+    <LinearLayout
+        android:id="@+id/coordinatesBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_margin="24dp"
+        android:background="@drawable/location_background"
+        android:layout_gravity="top|start">
+
+
+        <TextView
+            android:id="@+id/latText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitude: --"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/lonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitude: --"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- زر التشغيل/الإيقاف -->
+    <Button
+        android:id="@+id/toggleServiceButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="24dp"
+        android:background="@drawable/round_button"
+        android:text="▶"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:elevation="12dp"
+        android:stateListAnimator="@null"
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+
+
+</FrameLayout>

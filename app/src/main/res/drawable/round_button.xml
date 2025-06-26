@@ -1,0 +1,15 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <solid android:color="#1E88E5" /> <!-- لون عند الضغط -->
+            <corners android:radius="30dp"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#2196F3" /> <!-- اللون العادي -->
+            <corners android:radius="30dp"/>
+        </shape>
+    </item>
+</selector>
